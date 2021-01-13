@@ -11,5 +11,5 @@ springboot_job:
   tags:
     - springboot
   script:
-    -echo SETTING UP SPRINGBOOT
+    - echo SETTING UP SPRINGBOOT
   image: mpozega/springboot
