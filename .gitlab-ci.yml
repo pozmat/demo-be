@@ -1,0 +1,15 @@
+postgres_job:
+  tags:
+    - postgres
+  image: mpozega/postgres
+  script:
+    - echo SETTING UP POSTGRES
+  after_script:
+    - psql -U postgres
+    - CREATE DATABASE demodb;
+springboot_job:
+  tags:
+    - springboot
+  script:
+    -echo SETTING UP SPRINGBOOT
+  image: mpozega/springboot
